@@ -1,15 +1,14 @@
-# Tag Poetry
-## History
-### Facts...
-###### Biography
-T.A.G Poetry is a non-profit organization built upon community service and literacy. We have a passion for innercity and wish to dispell the struggling artist stigma. 
-** Why T.A.G **
-**_We all we got_**
-~~Every child is capable of learning.~~
--
-- Targeting ages 10-24
-- Poetry/Literacy
-- At risk teens
-1. How it works.
-2. Is T.A.g for you
-3. Registration
+# Nicole Nelson
+
+###### What should know about me..
+- artsy
+- poetic
+- sarcastic/goofy 
+
+** About me **
+ I am the oldest of seven children. I have 3 sisters and 4 brothers. I have worked 11 years in education. I enjoy working with ages 2-5 years old. I also love to travel, skate, and watch movies. 
+
+ ![alttext](https://i.pinimg.com/736x/a6/52/b4/a652b4dcae1187cbe1b2828c2a7b267d.jpg)
+
+ I am awesome and witty. 
+ 
