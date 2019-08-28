@@ -1,0 +1,9 @@
+// 20190827200316
+// https://gist.githubusercontent.com/manavm1990/1800b5aab55a03c7aff2a3c5150d8054/raw/178997acefc643bdec5fbe1495ba9931c052598c/.stylelintrc
+
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-prettier/recommended"
+  ]
+}
