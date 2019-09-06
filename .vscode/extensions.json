@@ -1,4 +1,5 @@
-{"recommendations": [
+{
+  "recommendations": [
     "formulahendry.auto-rename-tag",
     "aaron-bond.better-comments",
     "coenraads.bracket-pair-colorizer-2",
@@ -18,5 +19,5 @@
     "codezombiech.gitignore",
     "kisstkondoros.vscode-gutter-preview",
     "plievone.vscode-template-literal-editor"
-  ]
+]
 }
