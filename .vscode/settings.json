@@ -1,6 +1,5 @@
 {
-    "git.ignoreLimitWarning": true
-}
+"git.ignoreLimitWarning": true,
 "files.autoSave": "onFocusChange",
 "editor.tabSize": 2,
 "editor.wordWrap": "wordWrapColumn",
@@ -21,4 +20,6 @@
 "better-comments.highlightPlainText": true,
 "eslint.autoFixOnSave": true,
 "files.eol": "\n"
+"stylelint.enable": true,
+"css.validate": false, }
 }
