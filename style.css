@@ -63,5 +63,13 @@ img{
     box-shadow: 3px;
 }
 
+nav ul {
+    list-style-type: none;
+    text-align: center;
+   }
 
 }
+}
+nav a {
+    text-decoration:none;
+  }
