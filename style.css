@@ -1,22 +1,51 @@
-h1::before {
-    content: 'Jesus is Real ';
-    font-family: 'Indie Flower', cursive;
-    }
+:root {
 
-    #another-test{
-        background-color: rgb(255, 0, 119)
-    }
-.test-class{ background-color: crimson}
-header{ background-color:coral
+
+    --primary: #00caee;
+
+    --primary-variant: #3700b3;
+
+    --secondary: #03dac6;
+
+    --secondary-variant: #018786;
+
+    --background: #fff;
+
+    --error: #008db0;
+
+    --primary-text: #fff;
+
+    --secondary-text: #000;
+
+    --base-spacing: 8px;
+
+    --border-primary: solid var(--primary-variant) 3px;
+
+    --border-secondary: solid var(--secondary-variant) 3px;
+}
+body { font-family: 'Courier New', Courier, monospace}
+background-color:--background;
 }
 
-:root{
---primary:#03DAC6;
---primary-variant:#018786; 
---secondary:#3700B3; 
---secondary-variant:#6200EE; 
---base-spacing: 8px 
+h1 {
+    margin: calc(var(--base-spacing)*2);
+}
+header,
+section:nth-of-type(odd),
+footer {
+backgriund: var(--primary);
+color:var(--primary-text);
 
+}
+nav,
+section:nth-of-type(even) {
+       background-color: rgb(255, 0, 119)
+header{ background-color:coral
+}
+nav {
+    border-top: var(--border-secondary);
+    border-bottom: var(--border-secondary);
+}
 
 
 
