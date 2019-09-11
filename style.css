@@ -41,6 +41,10 @@ border-bottom: var(--border-secondary);
 footer{
  border-top:var(--border-primary);
 }
+.fast {
+    font size: 48px
+   }
+
 /*Layout*/
 header{
     display:flexbox;
