@@ -66,16 +66,31 @@ header,
  nav{
 border-top: var(--border-secondary);
 border-bottom: var(--border-secondary);
+min-height: 72px;
  }
 footer{
  border-top:var(--border-primary);
 }
+.fas {
+    font size: 48px;
+   }
+
+nav .fas{
+    margin: var(--base-spacing);
+    transform:translateX(calc(100vw - (var(--base-spacing))*10));
+}
+
+nav .is-hidden {
+    height: 0;
+    font-size: 0;
+}
 /*Layout*/
 header{
-    display:flexbox;
+    display:flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: var(--base-spacing);
+    text-align: center
 }
 figure,
 h1{
@@ -93,4 +108,63 @@ img{
 }
 
 
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+   }
+
+   .hero a{
+       background:var(--secondary-variant);
+       border-radius: var(--base-spacing);
+       padding: var(--base-spacing);
+   }
+
+    .read-more-btn {
+        border-radius: var(--base-spacing);
+        padding: var(--base-spacing);
+    }
+
+    .hero a {
+    background: var(--secondary-variant);
+    display: inline-block;
+    margin:var(--base-spacing) 0;
+    }
+
+
+nav a,
+.hero a{
+    /*remove underline*/
+    text-decoration: none;
+    background-color: var(--secondary);
 }
+
+
+.read-more-btn {
+
+    background: white
+
+}
+
+
+
+
+
+.hero {
+    align-items: center;
+    background: url(http://lorempixel.com/640/360) center center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+    max-height: 420px;
+    background-color: red;
+}
+
+
+
+
+
+
+
+
