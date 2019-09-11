@@ -78,13 +78,64 @@ img{
     box-shadow: 3px;
 }
 
+
+
 nav ul {
     list-style-type: none;
     text-align: center;
    }
 
+   .hero a{
+       background:var(--secondary-variant);
+       border-radius: var(--base-spacing);
+       padding: var(--base-spacing);
+   }
+
+    .read-more-btn {
+        border-radius: var(--base-spacing);
+        padding: var(--base-spacing);
+    }
+
+    .hero a {
+    background: var(--secondary-variant);
+    display: inline-block;
+    margin:var(--base-spacing) 0;
+    }
+
+
+nav a,
+.hero a{
+    /*remove underline*/
+    text-decoration: none;
+    background-color: var(--secondary);
 }
+
+
+.read-more-btn {
+
+    background: white
+
 }
-nav a {
-    text-decoration:none;
-  }
+
+
+
+
+
+.hero {
+    align-items: center;
+    background: url(http://lorempixel.com/640/360) center center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+    max-height: 420px;
+    background-color: red;
+}
+
+
+
+
+
+
+
+
