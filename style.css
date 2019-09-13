@@ -140,5 +140,10 @@ nav a,
 
 
 
+@media screen and (min-width:768px){
+    header {
+     background: #3700B3
+    }
+}
 
 
