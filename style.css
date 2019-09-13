@@ -54,6 +54,7 @@ nav .fas{
 nav .is-hidden {
     height: 0;
     font-size: 0;
+
 }
 /*Layout*/
 header{
@@ -124,6 +125,14 @@ nav a,
 
 
 
+.is-hidden--mobile {
+    font-size: 0;
+    height:0;
+}
+
+
+
+
 .hero {
     align-items: center;
     background: url(http://lorempixel.com/640/360) center center no-repeat;
@@ -144,6 +153,36 @@ nav a,
     header {
      background: #3700B3
     }
+
+.read-more-btn {
+align-self:center ;
+max-width:calc( var(--base-spacing));
+text-align:center;
 }
 
+}
+
+
+
+@media screen and (min-width: 1068px){
+    header {
+    flex-direction: row;
+    padding: calc(var(--base-spacing));
+}
+
+.is-shown--desktop {
+font-size: initial;
+}
+
+
+header figure {
+    margin-right:calc(var(--base-spacing)*2);
+}
+
+
+nav .is-hidden--desktop {
+    font-size:0;
+    height: 0;
+}
+}
 
