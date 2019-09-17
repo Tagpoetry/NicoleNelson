@@ -155,8 +155,13 @@ nav a,
 
 }
 
+.is-error {
 
+}
 
+.is-success {
+
+}
 
 
 .is-hidden--mobile {
@@ -213,12 +218,16 @@ text-align:center;
         margin-right:calc(var(--base-spacing)*2);
     }
 
-    .flex-container--desktop; {
-        display: flex;
-        flex-direction: row;
+    .flex-container--desktop {
+        display:flex;
     }
 
-    nav .is-hidden--desktop; {
+    .flex-row--desktop {
+        flex-direction:row;
+
+    }
+
+    .is-hidden--desktop {
         font-size:0;
         height: 0;
     }
