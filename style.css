@@ -23,9 +23,7 @@
 
     --border-secondary: solid var(--secondary-variant) 3px;
 }
-body { font-family: 'Courier New', Courier, monospace}
-background-color:--background;
-}
+body { font-family: 'Courier New', Courier, monospace; background-color: var(--background);
 
 h1 {
     margin: calc(var(--base-spacing)*2);
@@ -33,14 +31,15 @@ h1 {
 header,
 section:nth-of-type(odd),
 footer {
-backgriund: var(--primary);
+background: var(--primary);
 color:var(--primary-text);
 
 }
 nav,
 section:nth-of-type(even) {
-       background-color: rgb(255, 0, 119)
-header{ background-color:coral
+       background-color: rgb(255, 0, 119);
+}
+header{ background-color:coral;
 }
 nav {
     border-top: var(--border-secondary);
@@ -74,7 +73,7 @@ min-height: 72px;
 }
 
 .fas {
-    font size: 48px;
+    font-size: 48px;
    }
 
 nav .fas{
@@ -97,10 +96,7 @@ header{
     text-align: center;
 }
 
-figure,
-h1{
- margin:0;
-}
+
 
 figure,
     h2{
@@ -110,7 +106,7 @@ figure,
 
 img{
     border-radius:50%;
-    box-shadow: 3px;
+    box-shadow:3px 3px #000;
 }
 
 
@@ -151,7 +147,7 @@ nav a,
 
 .read-more-btn {
 
-    background: white
+    background: white;
 
 }
 
@@ -190,10 +186,10 @@ nav a,
 
 @media screen and (min-width:768px){
     header {
-     background: #3700B3
+     background: #3700B3;
     }
 
-.read-more-btn {
+.read-more-btn { ;
 align-self:center ;
 max-width:calc( var(--base-spacing));
 text-align:center;
