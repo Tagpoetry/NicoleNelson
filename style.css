@@ -24,6 +24,7 @@
     --border-secondary: solid var(--secondary-variant) 3px;
 }
 body { font-family: 'Courier New', Courier, monospace; background-color: var(--background);
+}
 
 h1 {
     margin: calc(var(--base-spacing)*2);
