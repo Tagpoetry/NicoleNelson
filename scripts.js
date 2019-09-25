@@ -1,6 +1,9 @@
-//select fa-hamburger
-// listen for a click on the hamburger
-//
+
+//remove the mobile hidden class from
+
+const hamburger = document.querySelector(".fa-hamburger");
+const hiddenUL = document.querySelector ("ul");
+
 
 function greeter (question = " what is your name?") {
   const answer =prompt(question);
