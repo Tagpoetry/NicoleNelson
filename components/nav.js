@@ -7,4 +7,4 @@ export default `<nav>
             <li><a href="../gallery/">Gallery</a></li>
             <li><a herf="../blog/">Blog</a></li>
         </ul>
-    </nav> `
+    </nav> `;

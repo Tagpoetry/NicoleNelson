@@ -5,4 +5,4 @@ export default `<footer>
         <li><a href=""></a>read more</li>
         <li><a href=""></a> read more</li>
     </ul>
-</footer>`
+</footer>`;

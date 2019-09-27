@@ -1,4 +1,4 @@
-  export default`<header>
+  export default `<header>
         <h1> Nicole Nelson Practice Project/ Contact </h1>
         <figure> <img srcset="https://picsum.photos/200,
             https://picsum.photos/300 1.5x,

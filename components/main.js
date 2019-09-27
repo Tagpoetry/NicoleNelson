@@ -34,4 +34,4 @@ export default `<main>
 </div>
 
 
-</main> `
+</main> `;
