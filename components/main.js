@@ -2,6 +2,10 @@ export default `<main>
 
 
 
+<div class="hero">
+
+    <a herf="#"> Fake CTA BTN</a>
+</div>
 
 
 

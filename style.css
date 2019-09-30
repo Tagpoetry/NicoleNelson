@@ -45,6 +45,7 @@ header{ background-color:coral;
 nav {
     border-top: var(--border-secondary);
     border-bottom: var(--border-secondary);
+
 }
 
 
