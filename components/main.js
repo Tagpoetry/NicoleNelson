@@ -1,4 +1,5 @@
-export default `<main>
+export default function (){
+    return `<main>
 
 
 
@@ -38,4 +39,4 @@ export default `<main>
 </div>
 
 
-</main> `;
+</main> `;}
