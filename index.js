@@ -1,6 +1,6 @@
 import { Header, Nav, main, footer } from "./components";
 
-
+import {Home, About, Contact, Blog, Gallery, Links} from "./store";
 
 const state ={
     home: {
@@ -28,10 +28,10 @@ const state ={
 //st =a piece of state
   function render (st = state.home) {
 document.querySelector("#root").innerHTML=`
-${Header( st.heading )}
-${Nav( st.heading)}
-${main( st.heading)}
-${footer( st.heading)}
+${Header( st )}
+${Nav( st)}
+${main( )}
+${footer( )}
 `;
 
 console.log (st.heading)
