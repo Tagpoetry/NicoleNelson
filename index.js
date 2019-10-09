@@ -1,8 +1,10 @@
 import { Header, Nav, main, footer } from "./components";
 
-import {Home, About, Contact, Blog, Gallery, Links} from "./store";
+import * as state from "./store";
 
-const state ={
+console.log(state)
+
+/*const state ={
     home: {
     heading: "Home Page",
     links: ["Home", "About", "Contact", "Blog", "Gallery"]
@@ -23,7 +25,7 @@ const state ={
       heading: "Blog Page",
       links:["Home", "About", "Contact", "Blog", "Gallery"]
     }
-};
+}; */
 
 //st =a piece of state
   function render (st = state.home) {

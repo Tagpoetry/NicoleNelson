@@ -1,5 +1,7 @@
-function linksBuilder(links) {
+import{links} from "../store"
 
+function linksBuilder(links) {
+ letlinksHTML ="";
 
 
 
@@ -7,7 +9,7 @@ function linksBuilder(links) {
 for (let i=0; i < links.length; i +=1) {
 linksHTML += `<li><a href='./${links[i]}'>${links[i]}</a></li>`;
 }
-    return
+    return linkHTML;
 }
 
 
@@ -29,3 +31,4 @@ export default function (){
             <li><a hf="../blog/">Blog</a></li>
         </ul>
     </nav> `;}
+
