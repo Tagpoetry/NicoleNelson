@@ -2,6 +2,8 @@ import { Header, Nav, main, footer } from "./components";
 
 import * as state from "./store";
 
+import Navigo from "navigo";
+
 /*const state ={
     home: {
     heading: "Home Page",
@@ -42,10 +44,10 @@ for(let i=0; i<links.length; i += 1){
 links[i].addEventListener('click', function(event){
    event.preventDefault();
 
-   render(state[event.target.textContent.toLowerCase()]);
+   render(state[event.target.textContent]);
 
 })
-}
+);
 
   }
 
