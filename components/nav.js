@@ -7,7 +7,7 @@ function linksBuilder(links) {
 
 
 for (let i=0; i < links.length; i +=1) {
-linksHTML += `<li><a href='./${links[i]}'>${links[i]}</a></li>`;
+linksHTML += `<li><a href='./${links[i]}" data-navigo >${links[i]}</a></li>`;
 }
     return linksHTML;
 }

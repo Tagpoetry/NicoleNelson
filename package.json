@@ -4,8 +4,11 @@
   "description": "practice project for savvy coders",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "serve": "parcel index.html",
+    "build": "parcel build index.html && cp _redirects ./dist/"
+  }
+
+
   "keywords": [
     "html",
     "css",
