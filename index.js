@@ -4,7 +4,12 @@ import * as state from "./store";
 
 import Navigo from "navigo";
 
+const router = new Navigo(location.origin);
+
+
+
 /*const state ={
+
     home: {
     heading: "Home Page",
     links: ["Home", "About", "Contact", "Blog", "Gallery"]
@@ -47,10 +52,12 @@ links[i].addEventListener('click', function(event){
    render(state[event.target.textContent]);
 
 })
-);
+
 
   }
 
-  render ();
-
-
+  router
+  // Developer's Note: ':page' can be whatever you want to name the key that comes into `params` Object Literal
+  .on(":page", params => render(state[params.page]))
+  .on("/", render())
+  .resolve();}
