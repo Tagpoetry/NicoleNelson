@@ -2,8 +2,6 @@ import { Header, Nav, main, footer } from "./components";
 
 import * as state from "./store";
 
-console.log(state)
-
 /*const state ={
     home: {
     heading: "Home Page",
@@ -26,24 +24,19 @@ console.log(state)
       links:["Home", "About", "Contact", "Blog", "Gallery"]
     }
 }; */
-
 //st =a piece of state
-  function render (st = state.home) {
+  function render (st = state.Home) {
 document.querySelector("#root").innerHTML=`
 ${Header( st )}
-${Nav( st)}
-${main( )}
+${Nav( )}
+${main(st )}
 ${footer( )}
 `;
 
-console.log (st.heading)
-  }
-
-  render ();
 const links = document.querySelectorAll('nav a');
-console.log(Array.isArray(links));
 
-console.log(links[3]);
+
+
 
 for(let i=0; i<links.length; i += 1){
 links[i].addEventListener('click', function(event){
@@ -53,4 +46,9 @@ links[i].addEventListener('click', function(event){
 
 })
 }
+
+  }
+
+  render ();
+
 
