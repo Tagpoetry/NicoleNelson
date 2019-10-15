@@ -6,9 +6,7 @@
   "scripts": {
     "serve": "parcel index.html",
     "build": "parcel build index.html && cp _redirects ./dist/"
-  }
-
-
+  },
   "keywords": [
     "html",
     "css",
