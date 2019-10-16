@@ -3,6 +3,8 @@ import { Header, Nav, main, footer } from "./components";
 import * as state from "./store";
 
 import Navigo from "navigo";
+import axios from "axios";
+
 
 const router = new Navigo(location.origin);
 
@@ -65,3 +67,7 @@ links[i].addEventListener('click', function(event){
   )
   .on("/", render())
   .resolve();}
+
+  axios
+  .get("https://jsonplaceholder.typicode.com/posts")
+  .then(response => console.log(response.data.posts));

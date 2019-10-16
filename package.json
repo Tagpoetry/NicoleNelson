@@ -4,8 +4,8 @@
   "description": "practice project for savvy coders",
   "main": "index.html",
   "scripts": {
-    "serve": "parcel index.html",
-    "build": "parcel build index.html && cp _redirects ./dist/"
+    "serve": " parcel index.html",
+    "build": " parcel build index.html && cp _redirects ./dist/"
   },
   "keywords": [
     "html",
@@ -26,6 +26,7 @@
     "stylelint-prettier": "^1.1.1"
   },
   "dependencies": {
+    "axios": "^0.19.0",
     "eslint-config-prettier": "^6.1.0",
     "eslint-plugin-prettier": "^3.1.0",
     "navigo": "^7.1.2",
