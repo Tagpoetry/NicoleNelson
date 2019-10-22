@@ -6,7 +6,7 @@ import Navigo from "navigo";
 import axios from "axios";
 
 import{ capitalize } from "lodash";
-
+import {db} from "./firebase";
 
 const router = new Navigo(location.origin);
 console.log(router)
@@ -83,3 +83,38 @@ if (capitalize(router.lastRouteResolved().params.page) === "Blog"){
 
   render();
 
+  db.collection("pictures")
+  .get()
+
+  /**
+   * Developer's Note: There is no straightforward way to get data back as an Array,
+   * so 'superpowers' are useless.😞
+   */
+  .then(querySnapshots => {
+    console.log(querySnapshots)
+    state.Gallery.main =
+      `<div class="gallery">` +
+      querySnapshots.docs
+        .map(doc => {
+          const { caption, credit, imgURL } = doc.data();
+
+          return `
+        <figure>
+          <img src="${imgURL}" alt="">
+          <figcaption>${caption} - ${credit}</figcaption>
+        </figure>
+      `;
+        })
+        .join(" ") +
+      `</div>`;
+        console.log(state.Gallery.main)
+    if (
+      router.lastRouteResolved().params &&
+      capitalize(router.lastRouteResolved().params.page) === "Gallery"
+    ) {
+      render(state.Gallery);
+    }
+  })
+  .catch(err => console.error("Error loading pics", err));
+
+  render();
