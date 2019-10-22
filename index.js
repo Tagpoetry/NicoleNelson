@@ -5,9 +5,11 @@ import * as state from "./store";
 import Navigo from "navigo";
 import axios from "axios";
 
+import{ capitalize } from "lodash";
+
 
 const router = new Navigo(location.origin);
-
+console.log(router)
 
 
 /*const state ={
@@ -34,40 +36,50 @@ const router = new Navigo(location.origin);
     }
 }; */
 //st =a piece of state
-  function render (st = state.Home) {
-document.querySelector("#root").innerHTML=`
-${Header( st )}
-${Nav( )}
-${main(st )}
-${footer( )}
+function render(st = state.Home) {
+  document.querySelector("#root").innerHTML = `
+${Header(st)}
+${Nav()}
+${main(st)}
+${footer()}
 `;
 
-router.updatePageLinks();
+  router.updatePageLinks();
 
-const links = document.querySelectorAll('nav a');
+  // const links = document.querySelectorAll('nav a');
 
+  // for (let i = 0; i < links.length; i += 1) {
+  //   links[i].addEventListener('click', function (event) {
+  //     event.preventDefault();
+  //     render(state[event.target.textContent]);
+  //   })
+  // }
+}
 
-
-
-for(let i=0; i<links.length; i += 1){
-links[i].addEventListener('click', function(event){
-   event.preventDefault();
-
-   render(state[event.target.textContent]);
-
-})
-
-
-  }
-
-  router
+router
   // Developer's Note: ':page' can be whatever you want to name the key that comes into `params` Object Literal
   .on(":page", params =>
-    render(state[`${params.page.slice(0, 1).toUpperCase()} ${params.page.slice(1).toLowerCase()}`])
+    render(state[capitalize(params.page)])
   )
-  .on("/", render())
-  .resolve();}
+  .on("/", () => render())
+  .resolve();
 
-  axios
+axios
   .get("https://jsonplaceholder.typicode.com/posts")
-  .then(response => console.log(response.data.posts));
+  .then(response => {
+
+    state.Blog.main= response.data.map(({title,body}) => `
+    <article>
+    <h2>${title}</h2>
+    <p>${body}</p>
+    </article>
+    `).join("");
+if (capitalize(router.lastRouteResolved().params.page) === "Blog"){
+  render(state.Blog)}
+
+
+  })
+  .catch(err => console.log(err));
+
+  render();
+
